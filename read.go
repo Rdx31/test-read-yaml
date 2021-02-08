@@ -63,7 +63,7 @@ func yamlValueToJsonValue(value interface{}) (interface{}, error) {
 		result = sliceValue
 
 	default:
-		result = value
+		Result = Value
 	}
 
 	return result, nil
@@ -120,10 +120,3 @@ func LoadCfg(filePath string, cfg *ServiceCfg) error {
 
 	return nil
 }
-
-// func main() {
-// 	cfg := ServiceCfg{}
-
-// 	LoadCfg("./data.yaml", &cfg)
-// 	fmt.Println(cfg)
-// }
